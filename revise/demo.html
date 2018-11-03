@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>toastr-postion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../original/build/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="build/toastr-postion.css" rel="stylesheet" type="text/css"/>
+</head>
+<style>
+    .operation {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-top: 20%
+    }
+</style>
+
+<body>
+<div class="operation">
+    <button class="btn btn-primary" onclick="middlecenter()">居中</button>
+    <button class="btn btn-primary" onclick="topfull()">顶部</button>
+    <button class="btn btn-primary" onclick="bottomfull()">底部</button>
+    <button class="btn btn-primary" onclick="topright()">右上</button>
+    <button class="btn btn-primary" onclick="bottomright()">右下</button>
+</div>
+</body>
+</html>
+<script src="../original/build/jquery.min.js"></script>
+<script src="../original/build/toastr.js"></script>
+
+<script type="text/javascript">
+    function middlecenter() {
+        toastr.options = {
+            "containerId": "toast-middle-center",
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "rtl": false,
+            "positionClass": "toast-middle-center",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 300,
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "swing",//swing, linear
+            "hideEasing": "swing",
+            "showMethod": "show",//show, fadeIn, slideDown
+            "hideMethod": "hide"//hide, fadeOut, slideUp
+        }
+        toastr.info("你有新消息了", "提示");
+    }
+
+    function topfull() {
+        toastr.options = {
+            "containerId": "toast-top-full-width",
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "rtl": false,
+            "positionClass": "toast-top-full-width",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 300,
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "linear",
+            "hideEasing": "linear",
+            "showMethod": "slideDown",
+            "hideMethod": "slideUp"
+        }
+        toastr.error("你有新消息了!", "提示");
+    }
+
+    function bottomfull() {
+        toastr.options = {
+            "containerId": "toast-bottom-full-width",
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "rtl": false,
+            "positionClass": "toast-bottom-full-width",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 300,
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "linear",
+            "hideEasing": "linear",
+            "showMethod": "slideDown",
+            "hideMethod": "slideUp"
+        }
+        toastr.success("你有新消息了!!", "提示");
+    }
+
+    function topright() {
+        toastr.options = {
+            "containerId": "toast-top-right",
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "rtl": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 300,
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "linear",
+            "hideEasing": "linear",
+            "showMethod": "slideDown",
+            "hideMethod": "slideUp"
+        }
+        toastr.warning("你有新消息了!!!", "提示");
+    }
+
+    function bottomright() {
+        toastr.options = {
+            "containerId": "toast-bottom-right",
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "rtl": false,
+            "positionClass": "toast-bottom-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 300,
+            "timeOut": 0,
+            "extendedTimeOut": 0,
+            "showEasing": "linear",
+            "hideEasing": "linear",
+            "showMethod": "slideDown",
+            "hideMethod": "slideUp"
+        }
+        toastr.success("你有新消息了!!!!", "提示");
+    }
+    console.log("有问题联系: %c774669939@qq.com\n%cPowered By %c7c", "color:#0099FF", "color:#000", "color:#990099");
+</script>
